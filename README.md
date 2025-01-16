@@ -206,8 +206,19 @@ To modify the infrastructure:
 
 ### Environment Variables
 
-- `NODE_ENV`: Set to 'production' in Azure environment
-- `PORT`: Server port (default: 8080)
+Copy the example environment file and update it with your values:
+```bash
+cp .env.example .env
+```
+
+Required environment variables:
+- `AZURE_SUBSCRIPTION_ID`: Your Azure subscription ID
+- `AZURE_TENANT_ID`: Your Azure tenant ID
+- `REGISTRY_LOGIN_SERVER`: Azure Container Registry login server (automatically set during deployment)
+- `REGISTRY_USERNAME`: ACR username (automatically set during deployment)
+- `REGISTRY_PASSWORD`: ACR password (automatically set during deployment)
+
+The deployment script will automatically configure the registry-related variables, but you must provide your Azure subscription and tenant IDs.
 
 ### Authentication
 
