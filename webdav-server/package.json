@@ -1,0 +1,20 @@
+{
+  "name": "webdav-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.18.63",
+    "basic-auth": "^2.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "webdav-server": "^2.6.2"
+  },
+  "description": ""
+}

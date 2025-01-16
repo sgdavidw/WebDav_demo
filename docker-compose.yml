@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  webdav:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - webdav-data:/app/data
+    environment:
+      - NODE_ENV=production
+      - PORT=8080
+    restart: unless-stopped
+
+volumes:
+  webdav-data: 
